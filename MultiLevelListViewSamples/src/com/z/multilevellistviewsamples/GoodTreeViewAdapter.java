@@ -22,15 +22,11 @@ import com.z.multilevellistview.settings.PaddingSettings;
 import com.z.multilevellistview.widget.XListView;
 import com.z.multilevellistview.widget.XListView.IXListViewListener;
 public class GoodTreeViewAdapter extends BaseAdapter implements IXListViewListener{
-	/** ÔªËØÊı¾İÔ´ */
 	private ArrayList<MultiLevelBean> elementsData;
-	/** Ê÷ÖĞÔªËØ */
 	private ArrayList<MultiLevelBean> elements;
-	/**ListView*/
 	private XListView xListView;
 	private Context context;
 	private Animation toLeft;
-	//¼ÇÂ¼ÊÇ·ñÒÑ¾­¼ÓÔØ¹ı¸Ã·ÖÀà
 	private List<String> gcPidList;
 	
 	private FolderManager folderManager;
@@ -125,7 +121,7 @@ public class GoodTreeViewAdapter extends BaseAdapter implements IXListViewListen
 			goodDataList = JsonUtils.getListMap(map.get("goods_class_data").toString());
 			
 			for(Map<String, Object> xMap : goodDataList){
-				//½ÚµãÃû³Æ£¬½Úµãlevel£¬½Úµãid£¬¸¸½Úµãid£¬ÊÇ·ñÓĞ×Ó½Úµã£¬ÊÇ·ñÕ¹¿ª
+				
 				int id = Integer.parseInt(xMap.get("id").toString());
 				int gcPid = Integer.parseInt(xMap.get("gc_pid").toString());
 				String gcName = xMap.get("gc_name").toString();
@@ -139,7 +135,7 @@ public class GoodTreeViewAdapter extends BaseAdapter implements IXListViewListen
 					nodeElement = new GoodElement(id, gcName, gcPid, gcCeng - 1, hasChildNode, false);
 					elementsData.add(nodeElement);
 				}
-				//±£´æ½ÚµãÊôĞÔÊı¾İ
+				//ä¿å­˜èŠ‚ç‚¹å±æ€§æ•°æ®
 				nodeElement.setId(id);
 				nodeElement.setParend_id(gcPid);
 				nodeElement.setGc_name(gcName);
