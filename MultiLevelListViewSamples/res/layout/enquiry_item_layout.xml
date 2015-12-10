@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enquiry_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:minHeight="40dp"
+    >
+    <ImageView 
+        android:id="@+id/goods_classify_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/classify_arrow_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+    <TextView 
+        android:id="@+id/goods_classify_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品分类"
+        android:textSize="12dp"
+        android:textColor="#444444"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/goods_classify_imageview"
+        />
+</RelativeLayout>

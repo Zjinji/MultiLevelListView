@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <!-- xlistview_footer -->
+    <item name="xlistview_footer_content_layout" type="id"></item>
+    <item name="xlistview_footer_progress" type="id"></item>
+    <item name="xlistview_footer_text" type="id"></item>
+
+    <!-- xlist_header -->
+    <item name="xlistview_header_content_layout" type="id"></item>
+    <item name="xlistview_header_text_layout" type="id"></item>
+    <item name="xlistview_header_text" type="id"></item>
+    <item name="xlistview_header_time" type="id"></item>
+    <item name="xlistview_header_arrow" type="id"></item>
+    <item name="xlistview_header_progress" type="id"></item>
+</resources>
